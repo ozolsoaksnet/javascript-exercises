@@ -28,11 +28,27 @@
  */
 
 class PhoneNumber {
-  constructor(input) {
-    this.input = input;
-  }
+    constructor(input) {
+        this.input = input;
+    }
 
-  number() {}
+    number() {
+        let input = this.input
+        let output = ''
+        for (let i in input) {
+            let symbol = input[i]
+            let asInteger = parseInt(symbol)
+            let isNumber = !isNaN(symbol)
+            if (!isNaN(asInteger) && isNumber) {
+                output += symbol
+            }
+        }
+        if (output.charAt(0) == '1') {
+            output.slice(1)
+        }
+        return output
+
+    }
 }
 
 module.exports = PhoneNumber;
