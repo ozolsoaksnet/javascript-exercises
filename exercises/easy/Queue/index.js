@@ -12,6 +12,19 @@
  * q.remove(); // returns 1
  */
 
-class Queue {}
+class Queue {
+    constructor() {
+        this.numbers = []
+    }
+    numbers = []
+
+    add(number) {
+        this.numbers.push(number)
+    }
+    remove() {
+        return this.numbers.splice(0)
+
+    }
+}
 
 module.exports = Queue;
