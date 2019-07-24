@@ -11,6 +11,9 @@
  * capitalize('look, it is working!') === 'Look, It Is Working!'
  */
 
-function capitalize(str) {}
+function capitalize(str) {
+    Text - transform
+}
+
 
 module.exports = capitalize;
