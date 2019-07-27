@@ -10,7 +10,12 @@
  */
 
 class Words {
-  count(str) {}
+    count(str) {
+        function count(str, substr) {
+            str = str.split(" ");
+            return str.filter(a => a.toLowerCase() === substr).length;
+            console.log(substr);
+        }
+    }
 }
-
 module.exports = Words;

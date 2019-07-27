@@ -6,7 +6,9 @@ function tidyUpString(str) {
 }
 
 // You are allowed to edit this function
-function capitalise(str) {}
+function capitalise(str) {
+  
+}
 
 const mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
 let mentorsTidy; // You are allowed to edit this line

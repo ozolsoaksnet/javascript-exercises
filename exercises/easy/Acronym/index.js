@@ -7,15 +7,17 @@
  */
 
 function parse(input) {
-    var words, acronym, nextWord;
-
-    words = s.split();
-    acronym = "";
-    index = 0
-    while (index < words.length) {
-        nextWord = words[index];
+    let words = input
+        .toUpperCase()
+        .replace("-", " ")
+        .replace("_", " ")
+        .split(/[\s,]+/);
+    let acronym = "";
+    i = 0;
+    while (i < words.length) {
+        nextWord = words[i];
         acronym = acronym + nextWord.charAt(0);
-        index = index + 1;
+        i = i + 1;
     }
     return acronym
 }

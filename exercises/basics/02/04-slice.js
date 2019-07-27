@@ -1,6 +1,11 @@
 /**
  * Write function first5 which returns first five elements from the array
  */
+function first5(x) {
+    var first5Numbers = x.slice(0, 5);
+    return first5Numbers;
+}
+
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8]; // You are NOT allowed to edit this line
 const first5Numbers = first5(numbers); // You are NOT allowed to edit this line

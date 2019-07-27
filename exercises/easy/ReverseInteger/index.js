@@ -12,6 +12,13 @@
  * reverseInt(-90) === -9
  */
 
-function reverse(int) {}
+function reverse(int) {
+    if (int < 0) return -reverse(-int);
+    var str = int.toString();
+    var strArray = str.split("");
+    var revArray = strArray.reverse();
+    var rev = revArray.join("");
+    return Number(rev);
+}
 
 module.exports = reverse;
