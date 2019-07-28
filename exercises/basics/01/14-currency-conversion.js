@@ -9,11 +9,11 @@
 
 // You are allowed to change this function
 function convertToUSD(price) {
-    return price * 1.24;
+  return price * 1.24;
 }
 // You are allowed to change this function
 function convertToBRL(price) {
-    return price * 4.23;
+  return price * 4.23;
 }
 
 const product = "You don't know JS";

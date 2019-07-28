@@ -7,19 +7,19 @@
  */
 
 function parse(input) {
-    let words = input
-        .toUpperCase()
-        .replace("-", " ")
-        .replace("_", " ")
-        .split(/[\s,]+/);
-    let acronym = "";
-    i = 0;
-    while (i < words.length) {
-        nextWord = words[i];
-        acronym = acronym + nextWord.charAt(0);
-        i = i + 1;
-    }
-    return acronym
+  let words = input
+    .toUpperCase()
+    .replace("-", " ")
+    .replace("_", " ")
+    .split(/[\s,]+/);
+  let acronym = "";
+  i = 0;
+  while (i < words.length) {
+    nextWord = words[i];
+    acronym = acronym + nextWord.charAt(0);
+    i = i + 1;
+  }
+  return acronym;
 }
 
 module.exports = parse;

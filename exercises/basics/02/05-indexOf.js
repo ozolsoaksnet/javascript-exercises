@@ -7,8 +7,8 @@
 
 // You are allowed to edit only this function
 function remove(arr, valueToRemove) {
-    var newNumbers = arr.slice(1)
-    return newNumbers
+  var newNumbers = arr.slice(1);
+  return newNumbers;
 }
 
 const numbers = [1, 2, 3];

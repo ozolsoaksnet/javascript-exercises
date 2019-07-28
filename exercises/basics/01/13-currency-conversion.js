@@ -7,7 +7,7 @@
 
 // You are allowed to change only this function
 function convertToUSD() {
-    return price * 1.24;
+  return price * 1.24;
 }
 
 const product = "You don't know JS";

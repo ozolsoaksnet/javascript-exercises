@@ -5,13 +5,12 @@
  */
 
 function sumNumbers(array) {
-    let sum = 0
-    for (let i in array) {
-        sum = sum + array[i]
-        console.log(i)
-    }
-    return sum
+  let sum = 0;
+  for (let i in array) {
+    sum = sum + array[i];
+    console.log(i);
+  }
+  return sum;
 }
-
 
 module.exports = sumNumbers;

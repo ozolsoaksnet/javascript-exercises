@@ -34,15 +34,14 @@
  */
 
 function transform(old) {
-    var result = {};
-    for (var point in old) {
-        var letters = old[point];
-        for (var i = 0, item;
-            (item = letters[i]); i++) {
-            result[item.toLowerCase()] = parseInt(point);
-        }
+  var result = {};
+  for (var point in old) {
+    var letters = old[point];
+    for (var i = 0, item; (item = letters[i]); i++) {
+      result[item.toLowerCase()] = parseInt(point);
     }
-    return result;
+  }
+  return result;
 }
 
 module.exports = transform;

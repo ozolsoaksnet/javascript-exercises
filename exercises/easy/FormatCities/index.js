@@ -5,12 +5,12 @@
  */
 
 function formatCities(array, fn) {
-    let transformIntoString = function(it) {
-        return it.city + "" + it.country;
-    };
-    console.log(array.map(it => it.city + " " + it.country));
+  let transformIntoString = function(it) {
+    return it.city + "" + it.country;
+  };
+  console.log(array.map(it => it.city + " " + it.country));
 
-    return array.map(fn);
+  return array.map(fn);
 }
 
 module.exports = formatCities;

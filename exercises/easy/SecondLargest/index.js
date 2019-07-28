@@ -5,12 +5,12 @@
  */
 
 function secondLargest(array) {
-    let secondArray = array.slice(0);
-    let secondLargest = secondArray.sort()[secondArray.length - 1];
+  let secondArray = array.slice(0);
+  let secondLargest = secondArray.sort()[secondArray.length - 1];
 
-    console.log(secondLargest);
+  console.log(secondLargest);
 
-    return secondLargest;
+  return secondLargest;
 }
 
 module.exports = secondLargest;

@@ -5,11 +5,11 @@
  */
 
 function wordLengths(array) {
-    let newArray = [];
-    for (let i in array) {
-        newArray.push(array[i].length)
-    }
-    return newArray
+  let newArray = [];
+  for (let i in array) {
+    newArray.push(array[i].length);
+  }
+  return newArray;
 }
 
 module.exports = wordLengths;

@@ -14,11 +14,11 @@
  */
 
 function palindrome(str) {
-    let reverse = str
-        .split("")
-        .reverse()
-        .join("");
-    return reverse === str;
+  let reverse = str
+    .split("")
+    .reverse()
+    .join("");
+  return reverse === str;
 }
 
 module.exports = palindrome;

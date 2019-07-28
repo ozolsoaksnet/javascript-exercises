@@ -10,23 +10,23 @@
  */
 
 function maxChar(str) {
-    let occurrences = {};
-    for (let letterIndex in str) {
-        let letter = str[letterIndex];
-        if (occurrences[letter] == undefined) {
-            occurrences[letter] = 0;
-        }
-        occurrences[letter] = occurrences[letter] + 1;
+  let occurrences = {};
+  for (let letterIndex in str) {
+    let letter = str[letterIndex];
+    if (occurrences[letter] == undefined) {
+      occurrences[letter] = 0;
     }
-    let mostCommonLetter = str.charAt(0);
-    for (let letter in occurrences) {
-        let currentLetterCount = occurrences[letter];
-        let mostCommonLetterCount = occurrences[mostCommonLetter];
-        if (currentLetterCount > mostCommonLetterCount) {
-            mostCommonLetter = letter;
-        }
+    occurrences[letter] = occurrences[letter] + 1;
+  }
+  let mostCommonLetter = str.charAt(0);
+  for (let letter in occurrences) {
+    let currentLetterCount = occurrences[letter];
+    let mostCommonLetterCount = occurrences[mostCommonLetter];
+    if (currentLetterCount > mostCommonLetterCount) {
+      mostCommonLetter = letter;
     }
-    return mostCommonLetter;
+  }
+  return mostCommonLetter;
 }
 
 module.exports = maxChar;

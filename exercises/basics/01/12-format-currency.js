@@ -8,11 +8,11 @@
 
 // You are allowed to change only this function
 function formatCurrency() {
-    return price * 0.2 + "£";
+  return price * 0.2 + "£";
 }
 
 function calculateSalesTax(price) {
-    return price * 0.2;
+  return price * 0.2;
 }
 
 const product = "You don't know JS";

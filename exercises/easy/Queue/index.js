@@ -13,18 +13,17 @@
  */
 
 class Queue {
-    constructor() {
-        this.numbers = []
-    }
-    numbers = []
+  constructor() {
+    this.numbers = [];
+  }
+  numbers = [];
 
-    add(number) {
-        this.numbers.push(number)
-    }
-    remove() {
-        return this.numbers.splice(0)
-
-    }
+  add(number) {
+    this.numbers.push(number);
+  }
+  remove() {
+    return this.numbers.splice(0);
+  }
 }
 
 module.exports = Queue;

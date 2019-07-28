@@ -6,7 +6,7 @@
  */
 
 function gigasecond(date) {
-    let result = new Date(date.valueOf() + Math.pow(10, 12));
-    return result
+  let result = new Date(date.valueOf() + Math.pow(10, 12));
+  return result;
 }
 module.exports = gigasecond;

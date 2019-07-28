@@ -10,15 +10,14 @@
  */
 
 function vowels(string) {
-    let list = "aeiouAEIOU";
-    let count = 0;
-    for (let i = 0; i < string.length; i++) {
-        if (list.indexOf(string[i]) !== -1) {
-            count += 1;
-        }
+  let list = "aeiouAEIOU";
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (list.indexOf(string[i]) !== -1) {
+      count += 1;
     }
-    return count;
+  }
+  return count;
 }
-
 
 module.exports = vowels;
